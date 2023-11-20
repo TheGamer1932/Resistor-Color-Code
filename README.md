@@ -1,11 +1,34 @@
-# Sample Snack app
+# Conversor de Resistores
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Este é um aplicativo simples para dispositivos móveis que permite aos usuários converter valores de resistência elétrica em códigos de cores de resistores e vice-versa.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Funcionalidades
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+- **Converter Valor para Cor:** Permite inserir o valor da resistência elétrica em ohms e calcular a cor correspondente das três primeiras faixas do resistor. A quarta faixa é fixa como dourada, indicando uma tolerância de 5%.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+- **Converter Cor para Valor:** Permite selecionar as cores das três primeiras faixas de um resistor e calcular o valor da resistência em ohms.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Tecnologias Utilizadas
+
+- React Native
+- Expo
+- React Navigation
+- React Native Paper
+
+## Instalação
+
+1. Certifique-se de ter o [Expo CLI](https://docs.expo.dev/get-started/installation/) instalado.
+2. Clone este repositório: `git clone https://github.com/seu_usuario/nome_do_repositorio.git`
+3. Acesse o diretório do projeto: `cd nome_do_repositorio`
+4. Instale as dependências: `npm install` ou `yarn install`
+5. Execute o projeto: `expo start`
+
+## Screenshots
+
+![Tela Principal](screenshots/home.png)
+![Converter Valor para Cor](screenshots/value_to_color_converter.png)
+![Converter Cor para Valor](screenshots/color_to_value_converter.png)
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
