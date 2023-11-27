@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "resistor-color-code",
+    "slug": "snack-a640f15a-3afc-4805-87c0-e3ed6b1d6727",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Desenvolver um aplicativo para dispositivos móveis que ajude os usuários a converter valores de resistência elétrica em códigos de cores de resistores e vice versa."
+  }
+}
