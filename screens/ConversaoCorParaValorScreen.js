@@ -10,8 +10,8 @@ const ConversaoCorParaValorScreen = ({ navigation }) => {
 
   const calculateResistanceFromColors = () => {
     if (selectedFirstColor && selectedSecondColor && selectedThirdColor) {
-      const value = `${resistorColors.indexOf(selectedFirstColor)}${resistorColors.indexOf(selectedSecondColor)}`;
-      const multiplier = resistorColors.indexOf(selectedThirdColor);
+      const value = `${resistorColors.findIndex((color) => color.Item === selectedFirstColor)}${resistorColors.findIndex((color) => color.Item === selectedSecondColor)}`;
+      const multiplier = resistorColors.findIndex((color) => color.Item === selectedThirdColor);
 
       return `Valor: ${value} x 10^${multiplier} Ω ±5`;
     }
@@ -20,8 +20,8 @@ const ConversaoCorParaValorScreen = ({ navigation }) => {
 
   const handleCalculate = () => {
     if (selectedFirstColor && selectedSecondColor && selectedThirdColor) {
-      const value = `${resistorColors.indexOf(selectedFirstColor)}${resistorColors.indexOf(selectedSecondColor)}`;
-      const multiplier = resistorColors.indexOf(selectedThirdColor);
+      const value = `${resistorColors.findIndex((color) => color.Item === selectedFirstColor)}${resistorColors.findIndex((color) => color.Item === selectedSecondColor)}`;
+      const multiplier = resistorColors.findIndex((color) => color.Item === selectedThirdColor);
 
       const resistance = `Valor: ${value} x 10^${multiplier} Ω ±5`;
       setResistanceValue(resistance);
@@ -41,7 +41,7 @@ const ConversaoCorParaValorScreen = ({ navigation }) => {
         >
           <Picker.Item label="1ª cor" value="" />
           {resistorColors.map((color, index) => (
-            <Picker.Item key={index} label={color} value={color} />
+            <Picker.Item key={index} label={color.color} value={color.Item} />
           ))}
         </Picker>
         <Picker
@@ -51,7 +51,7 @@ const ConversaoCorParaValorScreen = ({ navigation }) => {
         >
           <Picker.Item label="2ª cor" value="" />
           {resistorColors.map((color, index) => (
-            <Picker.Item key={index} label={color} value={color} />
+            <Picker.Item key={index} label={color.color} value={color.Item} />
           ))}
         </Picker>
         <Picker
@@ -61,7 +61,7 @@ const ConversaoCorParaValorScreen = ({ navigation }) => {
         >
           <Picker.Item label="3ª cor" value="" />
           {resistorColors.map((color, index) => (
-            <Picker.Item key={index} label={color} value={color} />
+            <Picker.Item key={index} label={color.color} value={color.Item} />
           ))}
         </Picker>
       </View>
